@@ -34,18 +34,15 @@ module.exports = function npmClone(name) {
 
   if (parts.range !== '*') {
 
-    // TODO: should this be moved to `parse-semver`?
+    // @todo should this be moved to `parse-semver`?
     parts.version = parts.range.replace(/^[^0-9]+/, '').replace(/\s+.*$/, '');
 
     basename = format('%s-%s', _name, parts.version);
     url = format('%s%s/-/%s.tgz', url, _name, basename);
 
-    var basename_tgz = path.join(__dirname, basename + '.tgz');
-    var basename_tar = path.join(__dirname, basename + '.tar');
-
     got(url)
     .pipe(zlib.createGunzip())
-    .pipe(tar.extract('./my-tagdfgdfgrball'));
+    .pipe(tar.extract(basename)); // @todo
     return;
   }
 
