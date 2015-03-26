@@ -1,0 +1,36 @@
+{
+  "name": "npm-clone",
+  "version": "0.0.0",
+  "description": "Clone given version (or latest version) of npm package from the registry, just run `npm-clone verb` and your done.",
+  "scripts": {
+    "lint": "jshint index.js && jscs index.js --reporter inline",
+    "test": "mocha",
+    "test-cov": "istanbul cover _mocha",
+    "test-travis": "istanbul cover _mocha --report lcovonly"
+  },
+  "author": {
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "https://github.com/tunnckoCore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tunnckoCore/npm-clone.git"
+  },
+  "keywords": [],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/tunnckoCore/npm-clone/blob/master/license.md"
+  },
+  "dependencies": {
+    "JSONStream": "^0.10.0",
+    "got": "^2.5.0",
+    "parse-semver": "^1.0.0",
+    "registry-url": "^3.0.0",
+    "tar-fs": "^1.5.0"
+  },
+  "devDependencies": {
+    "istanbul-harmony": "~0.3.1",
+    "mocha": "~2.2.1"
+  }
+}
