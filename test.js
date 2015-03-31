@@ -1,5 +1,5 @@
 /**
- * npm-clone <https://github.com/tunnckoCore/npm-clone>
+ * package-clone <https://github.com/tunnckoCore/package-clone>
  *
  * Copyright (c) 2015 Charlike Mike Reagent, contributors.
  * Released under the MIT license.
@@ -8,10 +8,10 @@
 'use strict';
 
 var assert = require('assert');
-var npmClone = require('./index');
+var packageClone = require('./index');
 
-// describe('npm-clone:', function() {
+// describe('package-clone:', function() {
 //   // body
 // });
 
-npmClone('ember')
+packageClone('ember')

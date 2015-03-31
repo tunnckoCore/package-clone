@@ -1,5 +1,5 @@
 /**
- * npm-clone <https://github.com/tunnckoCore/npm-clone>
+ * package-clone <https://github.com/tunnckoCore/package-clone>
  *
  * Copyright (c) 2015 Charlike Mike Reagent, contributors.
  * Released under the MIT license.
@@ -17,7 +17,7 @@ var JSONStream = require('JSONStream');
 var parseSemver = require('parse-semver');
 var registryUrl = require('registry-url');
 
-module.exports = function npmClone(name) {
+module.exports = function packageClone(name) {
   var parts = name.split('/');
   var url = false;
 

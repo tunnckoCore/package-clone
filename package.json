@@ -1,5 +1,5 @@
 {
-  "name": "npm-clone",
+  "name": "package-clone",
   "version": "0.0.0",
   "description": "Clone given version (or latest version) of npm package from the registry, just run `npm-clone verb` and your done.",
   "scripts": {
